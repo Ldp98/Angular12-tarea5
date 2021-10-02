@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular12-login';
+  flag:boolean = true
+
+  apply(value:string){
+    this.flag = value =="login"?true : false;
+  }
 }
